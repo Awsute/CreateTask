@@ -98,7 +98,7 @@ def turn(player):
     while isNumber == False:
         if player == p1:
             if userIsP1 == 1:
-                playerTurn = input("Type the number here. It must be between 1 and 9 and it must be an available space: ")
+                playerTurn = input("Type number here. Must be an available space: ")
             else:
                 playerTurn = runAI.choices(boardSave1, availableSpaces, ColumnP1, ColumnP2, RowP1, RowP2, board, boardSave1, userIsP1)
         elif player == p2:
